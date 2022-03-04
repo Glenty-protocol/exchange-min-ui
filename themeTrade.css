@@ -1,0 +1,318 @@
+*{
+  font-family: montserrat !important;
+  box-shadow: none !important;
+}
+html,body{
+  height: 100%;
+}
+nav{
+background: transparent !important;
+border-bottom: 0 !important;
+height: 54px !important;
+}
+#root{
+  background : url("./images/GLENTY_background.png");
+  background-position-x:center;
+  background-size:cover;
+  min-height: 100%;
+}
+
+nav a svg{
+  margin-top: 20px !important;
+  zoom: 87%;
+  margin-left: -1%;
+  width: 310px !important;
+}
+nav button:last-child{
+  background-color: white !important;
+  color: black !important;
+  font-weight: normal !important;
+  letter-spacing: 0.11em !important;
+  zoom: 80%;
+}
+@media only screen and (max-width:900px){
+  #root{
+    background : url("./images/backgroundMobile.svg");
+    background-position-x:center;
+    background-size:cover;
+  }
+  div[role=presentation]:last-of-type{
+    display: none !important;
+  }
+  #addliqBody{
+    width: 100% !important;
+  }
+  .mobile-icon{
+    width: 120px !important;
+    zoom: 100%;
+    margin-top: 5px !important;
+    margin-left: 0%;
+  }
+  nav button:last-child{
+    zoom: 100% !important;
+  }
+  }
+
+.price{
+  position: absolute;
+    top: 100px;
+    left:10px;
+    padding: 8px;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+  }
+  .price svg{
+    display: none !important;
+  }
+
+.price div{
+  font-size: 0pt;
+}
+.phonePrice{
+  padding: 1%;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white !important;
+}
+.nav-links{
+  color: whitesmoke;
+  font-size: 15.5pt;
+}
+@media only screen and (max-width:1450px){
+  .nav-links{
+    font-size: 12.5pt;
+  }
+}
+.header-grid{
+width: 50%;
+display: grid;
+text-align: center;
+align-items: center;
+grid-template-columns: 16% 16% 16% 16% 16% 16%;
+margin-left: -8%;
+justify-content: center;
+}
+.conatinerAllPc{
+  margin-left: -5% !important;
+}
+.socialL{
+  bottom: 20px;
+  right: 0px;
+  position: fixed;
+  display: grid !important;
+      grid-template-columns: 46% 46%;
+      grid-column-gap: 3%;
+      grid-row-gap: 15px;
+}
+.socialL div svg,.socialL a svg{
+  fill: white;
+  width: 33px;
+}
+
+.fixedFooter{
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  display: none;
+  grid-template-columns: 25% 25% 25% 25%;
+  background: url('./images/menu.svg');
+  height: 100px;
+  bottom: -21px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footerLinks{
+  display: block;
+  text-align: center;
+  transition: 0.4s;
+}
+.activeFooter, .footerLinks:hover{
+  filter:brightness(200%);
+}
+.footerImg{
+  height: 25px;
+  width: 25px;
+  margin: 15% 0% 10% 0%;
+}
+@media only screen and (min-width:500px){
+  .footerImg{  
+    margin: 8% 0% 8% 0%;
+  }
+}
+.footerLinks p{
+  font-size: 10pt;
+  font-weight: bold;
+  color: #989fac;
+}
+.mobile-container{
+  width: 140%;
+  margin: 0 -20%;
+}
+@media only screen and (max-width:900px){
+  .header-grid,.socialL,.lang{
+    display: none !important;
+  }
+  div[role="dialog"]{
+    margin-bottom: 25% !important;
+    border: 0 !important;
+  }
+  #loading img{
+    margin-left: -30% !important;
+    margin-top: 50% !important;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .fixedFooter{
+    display: grid !important;
+  }
+  .conatinerAllPc{
+    margin: auto !important;
+  }
+}
+.moreMenu{
+  position: fixed;
+  width: 100%;
+  background: url(./images/menu.svg);
+  bottom: 75px;
+  display: none;
+  grid-template-columns: 100%;
+  color: #989fac;
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: center;
+  background-size: cover;
+}
+.moreLinks{
+  display: grid;
+  grid-template-columns: 15% 35%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 80%;
+  margin: auto;
+  border-bottom: 3px solid #989fac;
+  transition: 0.4s;
+}
+.moreLinks:hover{
+  filter:brightness(200%);
+}
+.moreLinks p{
+  display: inline-block;
+  line-height: 1.75;
+}
+.moreLinks img{
+  display: inline-block;
+  margin: 0;
+}
+
+#swap-currency-input div:first-child div:first-child{
+  display: none !important;
+}
+#swap-currency-output div:first-child div:first-child{
+  display: none;
+}
+#swap-currency-output div:first-of-type{
+  background: #1c1951 !important;
+}
+#swap-page h2,.liquidHeader h2{
+  color: #f3ba2f !important;
+}
+#swap-page div[color="textSubtle"],.liquidHeader div[color="textSubtle"]{
+  color: white !important;
+}
+.open-currency-select-button div{
+  display: block !important;
+}
+
+#swap-currency-input div:first-child{
+  background: #1c1951 !important;
+}
+#swap-currency-input button span div:first-child{
+  color: #f3ba2f !important;
+}
+
+#swap-currency-input button span svg:first-child{
+  fill: #f3ba2f !important;
+}
+#swap-currency-input input{
+  color: white !important;
+}
+/* #swap-currency-output div:first-child{
+  background: #1c1951 !important;
+} */
+#swap-currency-output button span div{
+  color: #f3ba2f !important;
+}
+#swap-currency-output button span svg{
+  fill:#f3ba2f !important;
+}
+#swap-page div:first{
+  background-color: #788cff !important;
+}
+#swap-page{
+  background: #788cff !important;
+}
+#swap-page div:last-child div button:last-child[type=button]{
+  background: rgb(157 115 9) !important;
+}
+
+.bodyofswap{
+  background: rgb(49, 39, 131) !important;
+}
+button[aria-label='Toggle menu']{
+  display: none !important;
+}
+#join-pool-button{
+background: rgb(218, 165, 32) !important;
+}
+
+@media only screen and (max-width:1500px){
+  @media only screen and (min-width:900px){
+    .conatinerAllPc{
+      margin-left: -8% !important;
+    }
+  }
+}
+
+@media only screen and (min-width:901px){
+  html{  
+    zoom: 85%;
+  }
+ 
+  #addliqBody{
+    width: 30%;
+  }
+
+}
+
+#add-liquidity-input-tokena div,#add-liquidity-input-tokena,#add-liquidity-input-tokenb,#add-liquidity-input-tokenb div{
+  background: rgb(28, 25, 81) !important;
+  border-radius: 20px;
+}
+.open-currency-select-button div[color='text'],.open-currency-select-button svg{
+  color: rgb(218, 165, 32) !important;
+  background: transparent !important;
+  fill:rgb(218, 165, 32) !important;
+}
+.removedrow{
+  display: none !important;
+}
+#addliqBody div:first-child div:first{
+  background: rgb(120, 140, 255) !important;
+}
+.buttonunlock button{
+  background: rgb(218, 165, 32) !important;
+}
+#bodypanel,#bodypanel div:first-of-type{
+  background-color: rgb(49, 39, 131) !important;
+}
+#addliqBody div:first-of-type div:first-of-type{
+  background: rgb(120, 140, 255);
+}
+#bodypanel button span div[color='text']{
+  background: transparent !important;
+}
+#liquid div[style='width: 100%;'] div span:nth-child(2){
+  display: none !important;
+}
